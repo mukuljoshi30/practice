@@ -35,8 +35,13 @@ public:
     void getNthNode(int);
     void getNthNodeFromEnd(int);
     void findMiddleElement();
+    bool isLoopInLinkList();
+    int lengthLoopInLinkList();
+    void reverseLinkList();
 };
-
+/*
+ * Insert a node in a link list
+ */
 template <typename T>
 bool LinkList<T>:: insertNode(T value)
 {
@@ -56,7 +61,10 @@ bool LinkList<T>:: insertNode(T value)
     }
     return true;
 }
-
+/*
+ * Insert a linklist with alloc mentod
+ * this function is halpful to handle the excetions
+ */
 template <typename T>
 bool LinkList<T>:: insertNodeWithNew(T value)
 {
@@ -83,7 +91,9 @@ bool LinkList<T>:: insertNodeWithNew(T value)
         return false;
     }
 }
-
+/*
+ * remove a node from the link list
+ */
 template <typename T>
 void LinkList<T>:: removeNode(T value)
 {
@@ -102,7 +112,9 @@ void LinkList<T>:: removeNode(T value)
         tempNode = tempNode->next;
     }
 }
-
+/*
+ * removal with delete keyword
+ */
 template <typename T>
 void LinkList<T>:: removeNodeWithDelete(T value)
 {
@@ -121,7 +133,9 @@ void LinkList<T>:: removeNodeWithDelete(T value)
         tempNode = tempNode->next;
     }
 }
-
+/*
+ * Link list traversal
+ */
 template <typename T>
 void LinkList<T> :: traverseLinkList()
 {
@@ -131,7 +145,10 @@ void LinkList<T> :: traverseLinkList()
         tempNode = tempNode->next;
     }
 }
-
+/*
+ * count the number of the nodes in the linklist
+ * using for loop
+ */
 template <typename T>
 int LinkList<T>:: findLengthItr()
 {
@@ -143,7 +160,10 @@ int LinkList<T>:: findLengthItr()
     }
     return count;
 }
-
+/*
+ * count the number of the nodes in the linklist
+ * using recursion
+ */
 template <typename T>
 int LinkList<T>:: findLengthRecursive(node<T>* tempNode)
 {
@@ -152,7 +172,9 @@ int LinkList<T>:: findLengthRecursive(node<T>* tempNode)
     }
     return findLengthRecursive(tempNode->next) + 1;
 }
-
+/*
+ * find the nth node from the begining
+ */
 template <typename T>
 void LinkList<T>::getNthNode(int n)
 {
@@ -167,7 +189,9 @@ void LinkList<T>::getNthNode(int n)
     }
     cout<< "there are less than n nodes in the list";
 }
-
+/*
+ * find the nth node from the end
+ */
 template <typename T>
 void LinkList<T>::getNthNodeFromEnd (int n)
 {
@@ -185,7 +209,12 @@ void LinkList<T>::getNthNodeFromEnd (int n)
     }
     cout << "n'th node from the end \t value = " << node->value << endl;
 }
-
+/*
+ * HARE and Tortoise
+ */
+/*
+ * find the mid node of the linklist
+ */
 template <typename T>
 void LinkList<T>:: findMiddleElement()
 {
@@ -195,6 +224,66 @@ void LinkList<T>:: findMiddleElement()
         fastNode = fastNode->next->next;
         slowNode = slowNode->next;
     }
-    cout << "Middle row valuer = " << slowNode->value;
+    cout << "Middle row value = " << slowNode->value;
+}
+/*
+ * is loop present in the linklist
+ */
+template <typename T>
+bool LinkList<T>:: isLoopInLinkList()
+{
+    node<T>* fastNode = head;
+    node<T>* slowNode = head;
+    while (fastNode->next->next) {
+        fastNode = fastNode->next->next;
+        slowNode = slowNode->next;
+        if (fastNode == slowNode) {
+            return true;
+        }
+    }
+    return false;
+}
+/*
+ * count the leangth of the loop
+ */
+template <typename T>
+int LinkList<T>:: lengthLoopInLinkList()
+{
+    node<T>* fastNode = head;
+    node<T>* slowNode = head;
+    bool isLoop = false;
+    while (fastNode->next->next) {
+        fastNode = fastNode->next->next;
+        slowNode = slowNode->next;
+        if (fastNode == slowNode) {
+            isLoop = true;
+            break;
+        }
+    }
+    int count = 0;
+    if (isLoop) {
+        do {
+            count++;
+            slowNode = slowNode->next;
+        } while(slowNode != fastNode);
+    }
+    return count;
+}
+/*
+ * reverse the linklist
+ */
+template <typename T>
+void LinkList<T> :: reverseLinkList()
+{
+    node<T>* currentNode = head;
+    node<T>* prevNode = NULL;
+    node<T>* nextNode;
+    while (currentNode) {
+        nextNode = currentNode->next;
+        currentNode->next = prevNode;
+        prevNode = currentNode;
+        currentNode = nextNode;
+    }
+    head = prevNode;
 }
 #endif /* link_list_h */
