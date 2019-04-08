@@ -220,13 +220,14 @@ void LinkList<T>:: findMiddleElement()
 {
     node<T>* fastNode = head;
     node<T>* slowNode = head;
-    while (fastNode->next->next) {
+    while (slowNode && fastNode && fastNode->next) {
         fastNode = fastNode->next->next;
         slowNode = slowNode->next;
     }
     cout << "Middle row value = " << slowNode->value;
 }
 /*
+ * verified in Hackerrank
  * is loop present in the linklist
  */
 template <typename T>
@@ -234,7 +235,7 @@ bool LinkList<T>:: isLoopInLinkList()
 {
     node<T>* fastNode = head;
     node<T>* slowNode = head;
-    while (fastNode->next->next) {
+    while (slowNode && fastNode && fastNode->next) {
         fastNode = fastNode->next->next;
         slowNode = slowNode->next;
         if (fastNode == slowNode) {
@@ -252,7 +253,7 @@ int LinkList<T>:: lengthLoopInLinkList()
     node<T>* fastNode = head;
     node<T>* slowNode = head;
     bool isLoop = false;
-    while (fastNode->next->next) {
+    while (slowNode && fastNode && fastNode->next) {
         fastNode = fastNode->next->next;
         slowNode = slowNode->next;
         if (fastNode == slowNode) {
@@ -270,6 +271,7 @@ int LinkList<T>:: lengthLoopInLinkList()
     return count;
 }
 /*
+ * verified in Hackerrank
  * reverse the linklist
  */
 template <typename T>
