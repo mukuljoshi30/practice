@@ -1,44 +1,16 @@
 //
-//  link_list.h
+//  link_list.cpp
 //  interview_prep
 //
-//  Created by mukuljos on 4/3/19.
+//  Created by mukuljos on 4/11/19.
 //  Copyright © 2019 mukuljos. All rights reserved.
 //
 
-#ifndef link_list_h
-#define link_list_h
+#include <iostream>
+#include "LinkList.h"
 
 using namespace std;
 
-template <typename T>
-struct node {
-    T value;
-    node<T>* next;
-};
-
-template <typename T>
-class LinkList {
-private:
-    node<T>* head;
-public:
-    LinkList() {
-        head = NULL;
-    }
-    bool insertNode(T vlaue);
-    bool insertNodeWithNew(T value);
-    void removeNode(T value);
-    void removeNodeWithDelete(T value);
-    void traverseLinkList();
-    int findLengthItr();
-    int findLengthRecursive(node<T> *);
-    void getNthNode(int);
-    void getNthNodeFromEnd(int);
-    void findMiddleElement();
-    bool isLoopInLinkList();
-    int lengthLoopInLinkList();
-    void reverseLinkList();
-};
 /*
  * Insert a node in a link list
  */
@@ -200,7 +172,7 @@ void LinkList<T>::getNthNodeFromEnd (int n)
     int count = 1;
     while (tempNode) {
         if (count++ == n) {
-           break;
+            break;
         }
     }
     while (tempNode->next) {
@@ -288,4 +260,11 @@ void LinkList<T> :: reverseLinkList()
     }
     head = prevNode;
 }
-#endif /* link_list_h */
+
+/*int main(int argc, const char * argv[]) {
+    // insert code here...
+    std::cout << "Hello, World!\n";
+    return 0;
+}*/
+
+
