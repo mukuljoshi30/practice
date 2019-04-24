@@ -1,0 +1,36 @@
+To compile c++ code:
+=======================
+g++ -Wall -std=c++11 -o prog1 prog1.cpp
+
+
+Stop a program in various stages:
+=================================
+1. After preprocessor step:
+   g++ -Wall -std=c++11 -E prog1.cpp
+
+2. After compilation:
+   g++ -Wall -std=c++11 -S prog1.cpp
+
+3. After assembly:
+   g++ -Wall -std=c++11 -c prog1.cpp
+
+
+
+To compile c code:
+==================
+1. Pre-processing
+Preprocessin via the GNU C Preprocessor (cpp.exe), which includes the headers (#include) and expands the macros (#define).
+cpp hello.c > hello.i
+The resultant intermediate file "hello.i" contains the expanded source code.
+2. Compilation
+The compiler compiles the pre-processed source code into assembly code for a specific processor.
+gcc -S hello.i
+The -S option specifies to produce assembly code, instead of object code. The resultant assembly file is "hello.s".
+3. Assembly
+The assembler (as.exe) converts the assembly code into machine code in the object file "hello.o".
+as -o hello.o hello.s
+4. Linker
+Finally, the linker (ld.exe) links the object code with the library code to produce an executable file "hello.exe".
+ld -o hello.exe hello.o ...libraries...
+
+

@@ -10,6 +10,7 @@
 		1D170FEC22551AEA002D8947 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D170FEB22551AEA002D8947 /* main.cpp */; };
 		1DFF158E225F145D00FCE0A5 /* LinkList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF158D225F145D00FCE0A5 /* LinkList.cpp */; };
 		1DFF1590225F162300FCE0A5 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF158F225F162300FCE0A5 /* QuickSort.cpp */; };
+		1DFF15932270186B00FCE0A5 /* OpenClosePrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF15922270186B00FCE0A5 /* OpenClosePrinciple.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,7 @@
 		1D170FF222551B45002D8947 /* LinkList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkList.h; sourceTree = "<group>"; };
 		1DFF158D225F145D00FCE0A5 /* LinkList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkList.cpp; sourceTree = "<group>"; };
 		1DFF158F225F162300FCE0A5 /* QuickSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort.cpp; sourceTree = "<group>"; };
+		1DFF15922270186B00FCE0A5 /* OpenClosePrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenClosePrinciple.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		1D170FDF22551AEA002D8947 = {
 			isa = PBXGroup;
 			children = (
+				1DFF15912270181A00FCE0A5 /* designPrinciples */,
 				1D170FEA22551AEA002D8947 /* interview_prep */,
 				1D170FE922551AEA002D8947 /* Products */,
 			);
@@ -68,6 +71,14 @@
 				1DFF158F225F162300FCE0A5 /* QuickSort.cpp */,
 			);
 			path = interview_prep;
+			sourceTree = "<group>";
+		};
+		1DFF15912270181A00FCE0A5 /* designPrinciples */ = {
+			isa = PBXGroup;
+			children = (
+				1DFF15922270186B00FCE0A5 /* OpenClosePrinciple.cpp */,
+			);
+			path = designPrinciples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D170FEC22551AEA002D8947 /* main.cpp in Sources */,
+				1DFF15932270186B00FCE0A5 /* OpenClosePrinciple.cpp in Sources */,
 				1DFF1590225F162300FCE0A5 /* QuickSort.cpp in Sources */,
 				1DFF158E225F145D00FCE0A5 /* LinkList.cpp in Sources */,
 			);
