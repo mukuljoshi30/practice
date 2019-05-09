@@ -11,6 +11,7 @@
 		1DFF158E225F145D00FCE0A5 /* LinkList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF158D225F145D00FCE0A5 /* LinkList.cpp */; };
 		1DFF1590225F162300FCE0A5 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF158F225F162300FCE0A5 /* QuickSort.cpp */; };
 		1DFF15932270186B00FCE0A5 /* OpenClosePrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF15922270186B00FCE0A5 /* OpenClosePrinciple.cpp */; };
+		1DFF15962283DCAE00FCE0A5 /* climbingStairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF15952283DCAE00FCE0A5 /* climbingStairs.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 		1DFF158D225F145D00FCE0A5 /* LinkList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkList.cpp; sourceTree = "<group>"; };
 		1DFF158F225F162300FCE0A5 /* QuickSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort.cpp; sourceTree = "<group>"; };
 		1DFF15922270186B00FCE0A5 /* OpenClosePrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenClosePrinciple.cpp; sourceTree = "<group>"; };
+		1DFF15952283DCAE00FCE0A5 /* climbingStairs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = climbingStairs.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		1D170FDF22551AEA002D8947 = {
 			isa = PBXGroup;
 			children = (
+				1DFF15942283DC1900FCE0A5 /* dynamicProgramming */,
 				1DFF15912270181A00FCE0A5 /* designPrinciples */,
 				1D170FEA22551AEA002D8947 /* interview_prep */,
 				1D170FE922551AEA002D8947 /* Products */,
@@ -79,6 +82,14 @@
 				1DFF15922270186B00FCE0A5 /* OpenClosePrinciple.cpp */,
 			);
 			path = designPrinciples;
+			sourceTree = "<group>";
+		};
+		1DFF15942283DC1900FCE0A5 /* dynamicProgramming */ = {
+			isa = PBXGroup;
+			children = (
+				1DFF15952283DCAE00FCE0A5 /* climbingStairs.cpp */,
+			);
+			path = dynamicProgramming;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				1D170FEC22551AEA002D8947 /* main.cpp in Sources */,
 				1DFF15932270186B00FCE0A5 /* OpenClosePrinciple.cpp in Sources */,
+				1DFF15962283DCAE00FCE0A5 /* climbingStairs.cpp in Sources */,
 				1DFF1590225F162300FCE0A5 /* QuickSort.cpp in Sources */,
 				1DFF158E225F145D00FCE0A5 /* LinkList.cpp in Sources */,
 			);
