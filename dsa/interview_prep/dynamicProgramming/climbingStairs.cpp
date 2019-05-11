@@ -1,10 +1,16 @@
-//
-//  climbingStairs.cpp
-//  interview_prep
-//
-//  Created by mukuljos on 5/9/19.
-//  Copyright © 2019 mukuljos. All rights reserved.
-//
+/*
+ *  climbingStairs.cpp
+ *  interview_prep
+ *
+ *  Created by mukuljos on 5/9/19.
+ *  Copyright © 2019 mukuljos. All rights reserved.
+ */
+
+/*
+ * Problem Statement:
+ * You can climb 1 or 2 stairs with one step.
+ * How may different ways can you climb n stairs?
+ */
 #include <iostream>
 #include <vector>
 #include<iterator>
