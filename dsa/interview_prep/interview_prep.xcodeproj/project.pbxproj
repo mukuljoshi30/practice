@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D170FEC22551AEA002D8947 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D170FEB22551AEA002D8947 /* main.cpp */; };
+		1DB3F6BC22A38F1A00BCB40E /* PrimeNumberSieves.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3F6BB22A38F1A00BCB40E /* PrimeNumberSieves.cpp */; };
 		1DFF158E225F145D00FCE0A5 /* LinkList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF158D225F145D00FCE0A5 /* LinkList.cpp */; };
 		1DFF1590225F162300FCE0A5 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF158F225F162300FCE0A5 /* QuickSort.cpp */; };
 		1DFF15932270186B00FCE0A5 /* OpenClosePrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF15922270186B00FCE0A5 /* OpenClosePrinciple.cpp */; };
@@ -31,6 +32,7 @@
 		1D170FE822551AEA002D8947 /* interview_prep */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = interview_prep; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D170FEB22551AEA002D8947 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1D170FF222551B45002D8947 /* LinkList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkList.h; sourceTree = "<group>"; };
+		1DB3F6BB22A38F1A00BCB40E /* PrimeNumberSieves.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PrimeNumberSieves.cpp; sourceTree = "<group>"; };
 		1DFF158D225F145D00FCE0A5 /* LinkList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkList.cpp; sourceTree = "<group>"; };
 		1DFF158F225F162300FCE0A5 /* QuickSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort.cpp; sourceTree = "<group>"; };
 		1DFF15922270186B00FCE0A5 /* OpenClosePrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenClosePrinciple.cpp; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				1D170FF222551B45002D8947 /* LinkList.h */,
 				1DFF158D225F145D00FCE0A5 /* LinkList.cpp */,
 				1DFF158F225F162300FCE0A5 /* QuickSort.cpp */,
+				1DB3F6BB22A38F1A00BCB40E /* PrimeNumberSieves.cpp */,
 			);
 			path = interview_prep;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				1DFF15962283DCAE00FCE0A5 /* climbingStairs.cpp in Sources */,
 				1DFF1590225F162300FCE0A5 /* QuickSort.cpp in Sources */,
 				1DFF158E225F145D00FCE0A5 /* LinkList.cpp in Sources */,
+				1DB3F6BC22A38F1A00BCB40E /* PrimeNumberSieves.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

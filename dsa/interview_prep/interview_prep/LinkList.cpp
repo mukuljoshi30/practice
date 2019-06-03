@@ -243,6 +243,37 @@ int LinkList<T>:: lengthLoopInLinkList()
     return count;
 }
 /*
+ * Find the first node of the loop in linklist
+ */
+template<typename T>
+node<T>* LinkList<T> findTheBeginingOfLoop()
+{
+    node<T>* fastNode = head;
+    node<T>* slowNode = head;
+    bool isLoop = false;
+    while (slowNode && fastNode && fastNode->next) {
+        fastNode = fastNode->next->next;
+        slowNode = slowNode->next;
+        if (fastNode == slowNode) {
+            isLoop = true;
+            break;
+        }
+    }
+    /*
+     * If there's a loop present in the linklist
+     * fastNode and slowNode will point to same node.
+     * D = (j-2*i)*c-k
+     * when the below two pointers meet only k nodes
+     * left to treverse
+     */
+    slowNode = head;
+    while (fastNode!=slowNode) {
+        fastNode = fastNode->next;
+        slowNode = slowNode->next;
+    }
+    return slowNode;
+}
+/*
  * verified in Hackerrank
  * reverse the linklist
  */
