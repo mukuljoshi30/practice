@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1D170FEC22551AEA002D8947 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D170FEB22551AEA002D8947 /* main.cpp */; };
 		1DB3F6BC22A38F1A00BCB40E /* PrimeNumberSieves.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3F6BB22A38F1A00BCB40E /* PrimeNumberSieves.cpp */; };
+		1DFADCDC231E3880001FB4F7 /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFADCDB231E3880001FB4F7 /* Stack.cpp */; };
+		1DFADCDE231FBDF4001FB4F7 /* MaxProductOfThreeNums.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFADCDD231FBDF4001FB4F7 /* MaxProductOfThreeNums.cpp */; };
+		1DFADCE0231FC603001FB4F7 /* ParenthesesCheck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFADCDF231FC603001FB4F7 /* ParenthesesCheck.cpp */; };
 		1DFF158E225F145D00FCE0A5 /* LinkList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF158D225F145D00FCE0A5 /* LinkList.cpp */; };
 		1DFF1590225F162300FCE0A5 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF158F225F162300FCE0A5 /* QuickSort.cpp */; };
 		1DFF15932270186B00FCE0A5 /* OpenClosePrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF15922270186B00FCE0A5 /* OpenClosePrinciple.cpp */; };
@@ -33,6 +36,10 @@
 		1D170FEB22551AEA002D8947 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1D170FF222551B45002D8947 /* LinkList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkList.h; sourceTree = "<group>"; };
 		1DB3F6BB22A38F1A00BCB40E /* PrimeNumberSieves.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PrimeNumberSieves.cpp; sourceTree = "<group>"; };
+		1DFADCDA231E3343001FB4F7 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		1DFADCDB231E3880001FB4F7 /* Stack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stack.cpp; sourceTree = "<group>"; };
+		1DFADCDD231FBDF4001FB4F7 /* MaxProductOfThreeNums.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MaxProductOfThreeNums.cpp; sourceTree = "<group>"; };
+		1DFADCDF231FC603001FB4F7 /* ParenthesesCheck.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParenthesesCheck.cpp; sourceTree = "<group>"; };
 		1DFF158D225F145D00FCE0A5 /* LinkList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkList.cpp; sourceTree = "<group>"; };
 		1DFF158F225F162300FCE0A5 /* QuickSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort.cpp; sourceTree = "<group>"; };
 		1DFF15922270186B00FCE0A5 /* OpenClosePrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenClosePrinciple.cpp; sourceTree = "<group>"; };
@@ -77,6 +84,10 @@
 				1DFF158D225F145D00FCE0A5 /* LinkList.cpp */,
 				1DFF158F225F162300FCE0A5 /* QuickSort.cpp */,
 				1DB3F6BB22A38F1A00BCB40E /* PrimeNumberSieves.cpp */,
+				1DFADCDA231E3343001FB4F7 /* Stack.h */,
+				1DFADCDB231E3880001FB4F7 /* Stack.cpp */,
+				1DFADCDD231FBDF4001FB4F7 /* MaxProductOfThreeNums.cpp */,
+				1DFADCDF231FC603001FB4F7 /* ParenthesesCheck.cpp */,
 			);
 			path = interview_prep;
 			sourceTree = "<group>";
@@ -154,7 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DFADCDC231E3880001FB4F7 /* Stack.cpp in Sources */,
+				1DFADCE0231FC603001FB4F7 /* ParenthesesCheck.cpp in Sources */,
 				1D170FEC22551AEA002D8947 /* main.cpp in Sources */,
+				1DFADCDE231FBDF4001FB4F7 /* MaxProductOfThreeNums.cpp in Sources */,
 				1DFF15932270186B00FCE0A5 /* OpenClosePrinciple.cpp in Sources */,
 				1DFF15982284236D00FCE0A5 /* cuttingRods.cpp in Sources */,
 				1DFF15962283DCAE00FCE0A5 /* climbingStairs.cpp in Sources */,

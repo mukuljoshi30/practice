@@ -246,7 +246,7 @@ int LinkList<T>:: lengthLoopInLinkList()
  * Find the first node of the loop in linklist
  */
 template<typename T>
-node<T>* LinkList<T> findTheBeginingOfLoop()
+node<T>* LinkList<T>:: findTheBeginingOfLoop()
 {
     node<T>* fastNode = head;
     node<T>* slowNode = head;

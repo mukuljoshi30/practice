@@ -38,6 +38,7 @@ public:
     bool isLoopInLinkList();
     int lengthLoopInLinkList();
     void reverseLinkList();
+    node<T>* findTheBeginingOfLoop();
 };
 
 #endif /* LinkList_h */
