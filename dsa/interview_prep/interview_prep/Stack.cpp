@@ -20,19 +20,3 @@ int main() {
     return 0;
 }
 
-
-vector<int> matchingStrings(vector<string> strings, vector<string> queries) {
-    map<string, int> stringCounts;
-    std::map<string,int>::iterator it;
-    for(vector<string> :: iterator itr = strings.begin(); itr != strings.end(); itr++) {
-        it = stringCounts.find(*itr);
-        if(it != stringCounts.end()){
-            int count = it->second;
-            stringCounts.erase(it);
-            stringCounts.insert(pair<string, int>(*itr, ++count));
-        } else {
-            stringCounts.insert(pair<string, int>(*itr, 1));
-        }
-    }
-    
-}

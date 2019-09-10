@@ -18,6 +18,28 @@ struct node {
 };
 
 template <typename T>
+struct nodeRandDLL {
+    T val;
+    node<T>* next;
+    node<T>* random;
+};
+/*
+ * Random linklist is a doubly link list.
+ * next pointer points to next node
+ * rend pointer points to some rendom node of the linklist
+ */
+template <typename T>
+class RandomLinkList {
+private:
+    nodeRandDLL<T>* head;
+public:
+    RandomLinkList() {
+        head = NULL;
+    }
+    bool duplicateLinkList(nodeRandDLL<T>* head);
+};
+
+template <typename T>
 class LinkList {
 private:
     node<T>* head;

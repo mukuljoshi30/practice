@@ -297,5 +297,63 @@ void LinkList<T> :: reverseLinkList()
     std::cout << "Hello, World!\n";
     return 0;
 }*/
+/*
+ * Function to create a duplicate linklist of a randome doubly link list
+ * can be done in 2 ways: one creating extra hashmap or array to track the
+ * nodes pointing to previous nodes
+ * second method is to create nodes in between of original nodes and in next
+ * pass adjust the pointers.
+ * Problem statement: https://leetcode.com/problems/copy-list-with-random-pointer/submissions/
+ * SOlution result Result:
+ *  Runtime: 28 ms, faster than 93.47% of C++ online submissions for Copy List with Random Pointer.
+ *  Memory Usage: 22 MB, less than 100.00% of C++ online submissions for Copy List with Random Pointer.
 
+ */
+template <typename T>
+nodeRandDLL<T>* duplicateLinkList(nodeRandDLL<T>* head)
+{
+    nodeRandDLL<T>* dupHead = NULL;
+    nodeRandDLL<T>* temp = head;
+    if (!head) {
+        return NULL;
+    }
+    /*
+     * first pass: inserting a new node next to original node
+     */
+    while(temp) {
+        nodeRandDLL<T>* tempnode =(nodeRandDLL<T>*) malloc(sizeof(nodeRandDLL<T>));
+        if (!tempnode) {
+            cout << "malloc failed" << endl;
+            return NULL;
+        }
+        tempnode->next = temp->next;
+        temp->next = tempnode;
+        tempnode->val = temp->val;
+        temp = tempnode->next;
+    }
+    temp = head;
+    while(temp) {
+        if(temp->random==NULL){
+            temp->next->random = NULL;
+        } else {
+            temp->next->random = temp->random->next;
+        }
+        temp = temp->next->next;
+    }
+    
+    temp = head;
+    dupHead = head->next;
+    nodeRandDLL<T>* dup = dupHead;
+    while(temp) {
+        if(dup->next == NULL) {
+            temp->next = NULL;
+            break;
+        }
+        temp->next = dup->next;
+        dup->next = temp->next->next;
+        temp = temp->next;
+        dup = dup->next;
+    }
+    return dupHead;
+}
 

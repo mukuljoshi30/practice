@@ -16,7 +16,7 @@ class Solution {
 public:
     int maximumProduct(vector<int>& nums) {
         //O(nlg(n)) solution
-        int len = nums.size();
+        int len = int(nums.size());
         sort(nums.begin(), nums.end());
         int prod1 = nums[0]*nums[1]*nums[len-1];
         int prod2 = nums[len-1]*nums[len-2]*nums[len-3];
