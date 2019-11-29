@@ -6,6 +6,7 @@
 //  Copyright © 2019 mukuljos. All rights reserved.
 //
 //Problem description https://leetcode.com/problems/valid-parentheses/
+// https://www.hackerrank.com/challenges/balanced-brackets/problem
 #include <iostream>
 #include <stack>
 

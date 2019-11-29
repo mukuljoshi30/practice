@@ -16,6 +16,8 @@
 		1DFADCE423261FC4001FB4F7 /* HuffmanCoading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFADCE323261FC4001FB4F7 /* HuffmanCoading.cpp */; };
 		1DFADCE623266008001FB4F7 /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFADCE523266008001FB4F7 /* BinarySearchTree.cpp */; };
 		1DFADCE8232794F9001FB4F7 /* CIQ9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFADCE7232794F9001FB4F7 /* CIQ9.cpp */; };
+		1DFADCEA2335D3CE001FB4F7 /* New_Year_Chaos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFADCE92335D3CE001FB4F7 /* New_Year_Chaos.cpp */; };
+		1DFADCEC233F24EC001FB4F7 /* hackerrank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFADCEB233F24EC001FB4F7 /* hackerrank.cpp */; };
 		1DFF158E225F145D00FCE0A5 /* LinkList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF158D225F145D00FCE0A5 /* LinkList.cpp */; };
 		1DFF1590225F162300FCE0A5 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF158F225F162300FCE0A5 /* QuickSort.cpp */; };
 		1DFF15932270186B00FCE0A5 /* OpenClosePrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF15922270186B00FCE0A5 /* OpenClosePrinciple.cpp */; };
@@ -48,6 +50,8 @@
 		1DFADCE323261FC4001FB4F7 /* HuffmanCoading.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HuffmanCoading.cpp; sourceTree = "<group>"; };
 		1DFADCE523266008001FB4F7 /* BinarySearchTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinarySearchTree.cpp; sourceTree = "<group>"; };
 		1DFADCE7232794F9001FB4F7 /* CIQ9.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CIQ9.cpp; sourceTree = "<group>"; };
+		1DFADCE92335D3CE001FB4F7 /* New_Year_Chaos.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = New_Year_Chaos.cpp; sourceTree = "<group>"; };
+		1DFADCEB233F24EC001FB4F7 /* hackerrank.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hackerrank.cpp; sourceTree = "<group>"; };
 		1DFF158D225F145D00FCE0A5 /* LinkList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkList.cpp; sourceTree = "<group>"; };
 		1DFF158F225F162300FCE0A5 /* QuickSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort.cpp; sourceTree = "<group>"; };
 		1DFF15922270186B00FCE0A5 /* OpenClosePrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenClosePrinciple.cpp; sourceTree = "<group>"; };
@@ -96,10 +100,12 @@
 				1DFADCDB231E3880001FB4F7 /* Stack.cpp */,
 				1DFADCDD231FBDF4001FB4F7 /* MaxProductOfThreeNums.cpp */,
 				1DFADCDF231FC603001FB4F7 /* ParenthesesCheck.cpp */,
+				1DFADCE92335D3CE001FB4F7 /* New_Year_Chaos.cpp */,
 				1DFADCE1232020F7001FB4F7 /* sparse_array.cpp */,
 				1DFADCE323261FC4001FB4F7 /* HuffmanCoading.cpp */,
 				1DFADCE523266008001FB4F7 /* BinarySearchTree.cpp */,
 				1DFADCE7232794F9001FB4F7 /* CIQ9.cpp */,
+				1DFADCEB233F24EC001FB4F7 /* hackerrank.cpp */,
 			);
 			path = interview_prep;
 			sourceTree = "<group>";
@@ -178,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DFADCDC231E3880001FB4F7 /* Stack.cpp in Sources */,
+				1DFADCEA2335D3CE001FB4F7 /* New_Year_Chaos.cpp in Sources */,
 				1DFADCE8232794F9001FB4F7 /* CIQ9.cpp in Sources */,
 				1DFADCE0231FC603001FB4F7 /* ParenthesesCheck.cpp in Sources */,
 				1D170FEC22551AEA002D8947 /* main.cpp in Sources */,
@@ -185,6 +192,7 @@
 				1DFF15932270186B00FCE0A5 /* OpenClosePrinciple.cpp in Sources */,
 				1DFF15982284236D00FCE0A5 /* cuttingRods.cpp in Sources */,
 				1DFF15962283DCAE00FCE0A5 /* climbingStairs.cpp in Sources */,
+				1DFADCEC233F24EC001FB4F7 /* hackerrank.cpp in Sources */,
 				1DFF1590225F162300FCE0A5 /* QuickSort.cpp in Sources */,
 				1DFF158E225F145D00FCE0A5 /* LinkList.cpp in Sources */,
 				1DFADCE423261FC4001FB4F7 /* HuffmanCoading.cpp in Sources */,
