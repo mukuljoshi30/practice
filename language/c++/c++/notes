@@ -1,0 +1,12 @@
+1. Passing an onject to a function:
+When a copy of an object is created to be used as an argument to
+a function, the normal constructor is not called. Instead, the default copy constructor
+makes a bit-by-bit identical copy. However, when the copy is destroyed (usually by
+going out of scope when the function returns), the destructor is called.
+
+2. Reference: 1. You cannot reference another reference. means, you cannot obtain the address    of a reference.
+             2. You cannot create arrays of references.
+             3. You cannot create a pointer to a reference.
+             4. You cannot reference a bit-field.
+             5. A reference variable must be initialized when it is declared unless it is a member of a class, a function parameter, or a return value. Null references are prohibited.
+

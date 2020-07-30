@@ -3,7 +3,7 @@
 //  c++
 //
 //  Created by mukuljos on 7/20/20.
-//  Copyright © 2020 mukuljos. All rights reserved.
+//  Copyright © 2020 mj. All rights reserved.
 //
 
 #include <iostream>

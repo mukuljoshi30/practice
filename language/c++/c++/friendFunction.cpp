@@ -3,7 +3,7 @@
 //  c++
 //
 //  Created by mukuljos on 7/20/20.
-//  Copyright © 2020 mukuljos. All rights reserved.
+//  Copyright © 2020 mj. All rights reserved.
 //
 
 /*
@@ -15,17 +15,20 @@
  */
 #include <iostream>
 using namespace std;
+
 class myclass {
     int a, b;
 public:
     friend int sum(myclass x);
     void set_ab(int i, int j);
 };
+
 void myclass::set_ab(int i, int j)
 {
     a = i;
     b = j;
 }
+
 // Note: sum() is not a member function of any class.
 int sum(myclass x)
 {
@@ -33,6 +36,7 @@ int sum(myclass x)
      directly access a and b. */
     return x.a + x.b;
 }
+
 int main()
 {
     myclass n;

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1D25E15024C60F9600DCDAB5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D25E14F24C60F9600DCDAB5 /* main.cpp */; };
 		1D25E15824C60FB900DCDAB5 /* friendFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D25E15624C60FB900DCDAB5 /* friendFunction.cpp */; };
+		1D25E15A24C6ADBF00DCDAB5 /* staticMember.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D25E15924C6ADBF00DCDAB5 /* staticMember.cpp */; };
+		1D7D508424D2CB53000F6482 /* memoryAllocation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D508324D2CB53000F6482 /* memoryAllocation.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +29,9 @@
 		1D25E14C24C60F9600DCDAB5 /* c++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D25E14F24C60F9600DCDAB5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1D25E15624C60FB900DCDAB5 /* friendFunction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = friendFunction.cpp; sourceTree = "<group>"; };
+		1D25E15924C6ADBF00DCDAB5 /* staticMember.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = staticMember.cpp; sourceTree = "<group>"; };
+		1D25E15B24C966BE00DCDAB5 /* notes */ = {isa = PBXFileReference; lastKnownFileType = text; path = notes; sourceTree = "<group>"; };
+		1D7D508324D2CB53000F6482 /* memoryAllocation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = memoryAllocation.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +65,10 @@
 			isa = PBXGroup;
 			children = (
 				1D25E14F24C60F9600DCDAB5 /* main.cpp */,
+				1D25E15924C6ADBF00DCDAB5 /* staticMember.cpp */,
 				1D25E15624C60FB900DCDAB5 /* friendFunction.cpp */,
+				1D25E15B24C966BE00DCDAB5 /* notes */,
+				1D7D508324D2CB53000F6482 /* memoryAllocation.cpp */,
 			);
 			path = "c++";
 			sourceTree = "<group>";
@@ -92,7 +100,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = mukuljos;
+				ORGANIZATIONNAME = mj;
 				TargetAttributes = {
 					1D25E14B24C60F9600DCDAB5 = {
 						CreatedOnToolsVersion = 10.0;
@@ -121,8 +129,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7D508424D2CB53000F6482 /* memoryAllocation.cpp in Sources */,
 				1D25E15024C60F9600DCDAB5 /* main.cpp in Sources */,
 				1D25E15824C60FB900DCDAB5 /* friendFunction.cpp in Sources */,
+				1D25E15A24C6ADBF00DCDAB5 /* staticMember.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
