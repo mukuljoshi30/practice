@@ -11,6 +11,8 @@
 		1D25E15824C60FB900DCDAB5 /* friendFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D25E15624C60FB900DCDAB5 /* friendFunction.cpp */; };
 		1D25E15A24C6ADBF00DCDAB5 /* staticMember.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D25E15924C6ADBF00DCDAB5 /* staticMember.cpp */; };
 		1D7D508424D2CB53000F6482 /* memoryAllocation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D508324D2CB53000F6482 /* memoryAllocation.cpp */; };
+		1D7E8D4D25A6AF5E000E2DC3 /* leet_reverse_integer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E8D4C25A6AF5E000E2DC3 /* leet_reverse_integer.cpp */; };
+		1DD327F125A4CD0E009A27CD /* leet_add-two-numbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DD327F025A4CD0E009A27CD /* leet_add-two-numbers.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +34,8 @@
 		1D25E15924C6ADBF00DCDAB5 /* staticMember.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = staticMember.cpp; sourceTree = "<group>"; };
 		1D25E15B24C966BE00DCDAB5 /* notes */ = {isa = PBXFileReference; lastKnownFileType = text; path = notes; sourceTree = "<group>"; };
 		1D7D508324D2CB53000F6482 /* memoryAllocation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = memoryAllocation.cpp; sourceTree = "<group>"; };
+		1D7E8D4C25A6AF5E000E2DC3 /* leet_reverse_integer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = leet_reverse_integer.cpp; sourceTree = "<group>"; };
+		1DD327F025A4CD0E009A27CD /* leet_add-two-numbers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "leet_add-two-numbers.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				1D25E15624C60FB900DCDAB5 /* friendFunction.cpp */,
 				1D25E15B24C966BE00DCDAB5 /* notes */,
 				1D7D508324D2CB53000F6482 /* memoryAllocation.cpp */,
+				1DD327F025A4CD0E009A27CD /* leet_add-two-numbers.cpp */,
+				1D7E8D4C25A6AF5E000E2DC3 /* leet_reverse_integer.cpp */,
 			);
 			path = "c++";
 			sourceTree = "<group>";
@@ -130,7 +136,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D7D508424D2CB53000F6482 /* memoryAllocation.cpp in Sources */,
+				1D7E8D4D25A6AF5E000E2DC3 /* leet_reverse_integer.cpp in Sources */,
 				1D25E15024C60F9600DCDAB5 /* main.cpp in Sources */,
+				1DD327F125A4CD0E009A27CD /* leet_add-two-numbers.cpp in Sources */,
 				1D25E15824C60FB900DCDAB5 /* friendFunction.cpp in Sources */,
 				1D25E15A24C6ADBF00DCDAB5 /* staticMember.cpp in Sources */,
 			);
